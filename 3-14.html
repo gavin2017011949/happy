@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .f{
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>毕业生信息</h1>
+    <form class="f">
+        <fieldset class="fiel">
+            <legend class="le">
+                学生信息
+            </legend>
+            姓&nbsp&nbsp名&nbsp<input type="text" name="name" autofocus="autofocus" required placeholder="请输入姓名"><span style="color:red">&nbsp*</span>
+            <br/>
+            学&nbsp&nbsp号&nbsp<input type="number" name="number" required placeholder="请输入学号"><span style="color:red">&nbsp*</span>
+            <br/>
+            手&nbsp&nbsp机&nbsp<input type="tel" name="phone" required placeholder="请输入手机号"><span style="color:red">&nbsp*</span>
+            <br/>
+            邮&nbsp&nbsp箱&nbsp<input type="email" name="email" required placeholder="请输入邮箱地址"><span style="color:red">&nbsp*</span>
+ 
+        </fieldset>
+        <br/>
+        <fieldset class="fiel">
+                <legend class="le">
+                    录取情况
+                </legend>
+                录取学校&nbsp<input type="search" name="school" list="dream">
+                <datalist id="dream">
+                        <option>河北师范大学</option>
+                        <option>河北科技大学</option>
+                        <option>伦敦大学</option>
+                        <option>剑桥大学</option>
+                        <option>哈佛大学</option>
+                        <option>牛津大学</option>
+                        <option>麻省理工大学</option>
+                        <option>北京大学</option>
+                        <option>清华大学</option>
+                </datalist>
+            
+                <br/>
+                入学成绩&nbsp<input type="number" name="score" >
+                <br/>
+                入学时间&nbsp<input type="date" name="date" >
+                
+            </fieldset>
+            <br/>
+            <input type="submit" value="提交">
+    </form>
+</body>
+</html>
