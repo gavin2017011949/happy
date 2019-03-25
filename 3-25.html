@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #sea{
+            width: 190px;
+            height: 40px;
+        }
+        #but{
+            width: 130px;
+            height: 35px;
+            cursor: pointer;
+        }
+        #clear{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(212, 219, 219);
+            text-align: center;
+            color:#fff;
+            margin-left: 340px;
+            cursor: pointer;
+        }
+        #msg{
+            width: 330px;
+            float: left;
+            margin-right: 5px;
+        }
+        a{
+            background-color: rgb(212, 219, 219);
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="search" name="s" id="sea" value="" placeholder="请输入想查找的商品">
+        <input type="button" name="b" value="搜索" id="but" onclick="saveStorage();">
+        <p>最近搜索</p>
+        <div id="msg"></div>
+        <div id="clear" onclick="clearStorage();">X</div>
+    </form>
+    <script type="text/javascript">
+       var sea=document.getElementById("sea");
+       var but=document.getElementById("but");
+       var msg=document.getElementById("msg");
+        window.onload=loadStorage();
+ 
+        function saveStorage() {
+            var data =sea.value;
+            var time = new Date().getTime();
+            localStorage.setItem(time, data);
+            var key = localStorage.key(localStorage.length-1);
+                var value = localStorage.getItem(key);
+
+                for(var j = 0; j <localStorage.length-1; j++){
+                   var key1=localStorage.key(j);
+                   var value1=localStorage.getItem(key1);  
+                    if(value==value1){
+                        localStorage.removeItem(key1);
+                    }
+                }
+                var par=document.getElementById('msg');
+                    var child = par.childNodes; 
+                for(var i=child.length-1;i>=0;i--){
+            
+                    par.removeChild(child[i]);
+                }
+            loadStorage();
+        }
+    
+        function loadStorage() {
+                for(var i=localStorage.length-1;i>=0;i--){
+                    var key=localStorage.key(i);
+                    var value=localStorage.getItem(key);
+                    var temp = document.createElement('a');
+                    temp.id='a'+i;
+                    var text=document.createTextNode(value);
+                    msg.appendChild(temp);
+                    temp.appendChild(text);
+                }
+        }
+        function clearStorage() {
+            localStorage.clear();
+            var par=document.getElementById('msg');
+                    var child = par.childNodes; 
+                for(var i=child.length-1;i>=0;i--){
+
+                    par.removeChild(child[i]);
+                }
+            loadStorage();
+ 
+        }
+    </script>
+</body>
+</html>
