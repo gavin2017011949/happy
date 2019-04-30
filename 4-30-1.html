@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+    <style>
+        #box{
+            width: 402px;
+            height: 302px;
+            position: absolute;
+            z-index: 0;
+            background: url(zibi.jpg) no-repeat center;
+            background-size: 302px 302px;
+        }
+        #canvas1{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            z-index: 1;
+            border: #978f8f solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="box"></div>
+        <canvas id="canvas1" width="400" height="300"></canvas>
+    </div>
+</body>
+<script>
+    var box = document.getElementById("box");  
+    var sum=Math.floor((Math.random()*3)+1);
+    if(sum==1){
+        box.style.backgroundImage = "url(zibi.jpg)";
+    }
+    else if(sum==2){
+        box.style.backgroundImage = "url(baobao.jpg)";
+    }
+    else{
+        box.style.backgroundImage = "url(rouruo.jpg)";
+    }
+    var elem = document.getElementById("canvas1");
+    var context = elem.getContext('2d');
+    var mousedown = false; 
+    context.beginPath();
+    context.fillStyle= '#978f8f';
+    context.fillRect(0,0,400,300);
+    elem.onclick=function(){
+        var x = event.clientX;
+        var y = event.clientY; 
+        context.globalCompositeOperation = "destination-out";
+        context.beginPath();
+        context.arc(x,y,40,0,Math.PI*2);
+        context.fill();
+        percentage();
+    }
+    elem.onmousedown=function(e){
+        e.preventDefault();
+        mousedown = true; 
+    }
+    elem.onmousemove = function(e){
+        e.preventDefault();
+        if(mousedown){
+            var x = event.clientX;
+            var y = event.clientY;
+            context.globalCompositeOperation = "destination-out";
+            context.beginPath();
+            context.arc(x,y,40,0,Math.PI*2);
+            context.fill();
+            percentage();
+        }
+    }
+    elem.onmouseup=function(e){
+        e.preventDefault();
+        mousedown = false; 
+    } 
+    function percentage(){
+        var imgData = context.getImageData(0, 0,400, 300);
+        var data = imgData.data; 
+	    var length = data.length;
+        var transparent= 0;
+    
+        for(var i = 0; i <length; i += 4){
+            if(data[i+3] == 0){
+                transparent++;
+            }
+        }
+        if(transparent >= 0.85*400*300){
+            context.clearRect(0, 0, 400, 300);
+        }
+
+    }
+</script>
+</html>
