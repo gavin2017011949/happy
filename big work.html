@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>英华逸游</title>
     <style>
+        body{
+            background-color: #f5f5f5;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -91,65 +94,7 @@
                 margin-left: 100px;
             }
         }
-        /* .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-            border-color: #e7e7e7;
-        }
-        .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-            max-height: 340px;
-        }
-        @media (min-width: 1200px){
-            .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
-                padding-right: 0;
-                padding-left: 0;
-            }
-        }
-        @media (min-width: 1200px){
-            .navbar-collapse.collapse {
-                display: block !important;
-                height: auto !important;
-                padding-bottom: 0;
-                overflow: visible !important;
-            }
-        }
-        @media (min-width: 1200px){
-            .navbar-collapse {
-                width: auto;
-                border-top: 0;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-            }
-        }
-        .navbar-collapse {
-            padding-right: 15px;
-            padding-left: 15px;
-            overflow-x: visible;
-            -webkit-overflow-scrolling: touch;
-            border-top: 1px solid transparent;
-            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-        } */
-        /* .navbar-default .navbar-nav>li>a {
-            color: #000
-        }
-        .navbar-default .navbar-nav>.disabled>a,
-        .navbar-default .navbar-nav>.disabled>a:focus,
-        .navbar-default .navbar-nav>.disabled>a:hover {
-            color: #000;
-            background-color: none;
-        }
-        .navbar-default .navbar-nav>li>a:focus,
-        .navbar-default .navbar-nav>li>a:hover {
-            color: rgb(235, 82, 35);
-            background-color: none;
-            border-bottom: 3px solid rgb(235, 82, 35)
-        }
-        .navbar-default .navbar-nav>.active>a,
-        .navbar-default .navbar-nav>.active>a:focus,
-        .navbar-default .navbar-nav>.active>a:hover {
-            color: rgb(235, 82, 35);
-            background: none;
-            border-bottom: 3px solid rgb(235, 82, 35)
-        } */
+    
 
         @media (min-width: 1200px){
     .container{
@@ -499,6 +444,12 @@
 
 /* banner */
 @media (min-width: 1200px){
+    .carousel-caption>p{
+       display: block;
+    }
+    .carousel-caption>h4{
+        display: none;
+    }
     #ban{
         width: 100%;
         height: 450px;
@@ -528,13 +479,20 @@
         font-size: 15px;
         text-align: left;
     }
-    .carousel-caption>h4{
-        display: none;
-    
-    }
-    }
 }
+.carousel-caption>h4{
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: left;
+    }
 @media (max-width: 1199px){
+    .carousel-caption>h4{
+       display: block;
+    }
+    .carousel-caption>p{
+        display: none;
+    }
     #ban{
         margin-top: 55px;
         height: 250px;
@@ -560,11 +518,6 @@
     right: auto;
     bottom: auto;
 }
-.carousel-caption>h4{
-    font-size: 25px;
-        margin-top: 20px;
-        text-align: left;
-    }
 /* bannerb */
 @media (min-width: 1200px){
     .bannerb{
@@ -596,9 +549,7 @@
     .banba a{
         margin-top: 5px;
     }
-    .banbba{
-        margin-top: 5px;
-    }
+    
 }
 /*bannerb start*/
 .bannerb{
@@ -689,6 +640,75 @@
 	background: #da3802;
 }
 
+
+@media (min-width: 1200px){
+    .guanggao{
+        width: 1200px;
+        height: 360px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #19376e;
+    }
+    .guanggao img{
+        float: left;
+    }
+    .blue{
+        width: 260px;
+        height: 360px;
+        float: left;
+        
+    }
+    .blue img{
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+    .blue p{
+        margin-top: 190px;
+        font-size: 25px;
+        margin-left: 80px;
+        color:#fff;
+    }
+    .blue-but{
+        width: 180px;
+        height: 50px;
+        margin-left: 45px;
+        margin-top: 30px;
+        border-radius: 10px;
+        background-color: #19376e;
+        font-size: 20px;
+        color:#fff;
+    }
+
+}
+@media screen and (max-width: 750px){
+        .guanggao{
+            display: none;
+        }
+        .guanggaoPC{
+            width: 750px;
+            height: 195px;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+        .guanggaoPC img{
+            width: 90px;
+            height: 90px;
+            margin-left: 30px;
+            margin-top: 40px;
+            float: left;
+        }
+        .guanggaoPC>h4{
+            margin-top: 15px;
+            margin-left: 18px;
+            
+        }
+        .guanggaoPCz{
+            width: 390px;
+            height: 170px;
+            float: left;
+        }
+}
+
     </style>
 </head>
 <body data-spy="scroll"    data-target="#navbar-example" >
@@ -768,6 +788,24 @@
         </a>
      
     </div> 
+
+        <div class="guanggao">
+            <img src="img/Sbanner2.jpg"/>
+            <div class="blue">
+                <img src="img/car.png"/>
+                <p>车辆接送</p>
+                <button type="button" class="blue-but">查看详情</button>
+            </div>
+        </div>
+        <div class="guanggaoPC">
+            <img src="img/carH.png"/>
+            <div class="guanggaoPCz">
+                <h4>机场接送，省心省力</h4>
+                <p>提供上海，苏州，无锡各市</p>
+                <p>往返机场，码头接送服务，更有包车服务</p>
+            </div>
+            <!-- <button type="button" class="guanggaoPC-but">查看详情</button> -->
+        </div>
 
 
         <div class="bottom">
