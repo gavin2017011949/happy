@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>英华逸游</title>
     <style>
-        body{
-            background-color: #dddddd;
-        }
+        
         *{
             margin: 0;
             padding: 0;
@@ -642,6 +640,9 @@
 
 
 @media (min-width: 750px){
+    body{
+            background-color: #dddddd;
+        }
     .guanggao{
         width: 84%;
         height: 360px;
@@ -702,8 +703,11 @@
         text-align: center;  
     }
     .container{
-        width: 1200px;
-    }
+            width: 1200px;
+            margin: 0 auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     .guanggao2 img{
         width: 100%;
         margin-bottom: 100px;
@@ -724,21 +728,22 @@
         text-align: center;  
     }
     #shiming-zi{
+        width: 58%;
         height: 350px;
         background-color: #1b4d7b;
         margin-left: -15px;
     }
     #shiming-zi>h4{
         font-size: 20px;
-        margin-top: 85px;
+        margin-top: 14%;
         text-align: center;
         color:#fff;
     }
     .fuwu{
-        width: 520px;
+        width: 73%;
         height: 140px;
-        margin-top: 45px;
-        margin-left: 120px;
+        margin-top: 5%;
+        margin-left: 18%;
         color:#fff;
     }
     .fuwu>p{
@@ -794,7 +799,7 @@
         display: none;
     }
     .black{
-        /* width: 615px; */
+        width: 100%;
         height: 100px;
         background-color: #000;
         color:#fff;
@@ -808,14 +813,111 @@
     #con1{
         margin-left: 0px;
         margin-right: 0px;
-        padding-left: 30px;
+        padding-left: 40px;
         padding-right: 0px;
     }
     #con2{
         margin-left: 0px;
         margin-right: 0px;
         padding-left: 0px;
-        padding-right: 30px;
+        /* padding-right: 30px; */
+    }
+    .but-kuang{
+        display: none;
+    }
+    .qianzheng-zi{
+        width: 35%;
+        height: 160px;
+        margin:0 auto;
+        padding-top: 20px;
+        
+    }
+    .qianzheng-zi>h4{
+        font-size: 32px;
+        text-align: center;
+    }
+    .qianzheng-zi>p{
+        font-size: 16px;
+        text-align: center;  
+    }
+    #con11{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding-left: 25px; */
+        padding-right: 0px;
+    }
+    #con22{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding-left: 10px; */
+        padding-right: 0px;
+    }
+    #con33{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding-left: 0px; */
+        padding-right: 0px;
+    }
+    .xianlu1{
+        display:none;
+    }
+    .qianzheng1{
+        display: none;
+    }
+    .but11{
+        width: 16%;
+        height:50px;
+        border:1px solid #000;
+        font-size: 20px;
+        margin-top: 2%;
+        margin-left: 42%;
+        background-color: #dddddd;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+    #shiming-zi>h5{
+        display: none;
+    }
+    .flo{
+        display: none;
+    }
+    .con1-tu {
+        position: relative;
+    }
+    .flo11{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 30%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 3;
+        color: #fff;
+    }
+    .flo11>p{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-left: 5%;
+    }
+    .flo22{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 15%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 3;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .flo22>p{
+        font-size: 20px;
+        line-height: 100%;
+        margin-left: 40px;
+        float: left;
+        margin-top: 10px;
+    }
+    .flo222{
+        display: none;
     }
 
 }
@@ -829,14 +931,19 @@
     margin-right: auto;
     margin-left: auto;
 } */
-
+    
 @media screen and (max-width: 750px){
-        .container{
+        /* .container{
             width: 670px;
-            margin-left: 0px;
-            margin-right: 0px;
+            margin: 0 auto;
             padding-left: 0px;
             padding-right: 0px;
+        } */
+        body{
+            background-color: #f5f5f5;
+        }
+        .row{
+            margin: 0 auto;
         }
         .guanggao{
             display: none;
@@ -890,15 +997,18 @@
         }
         .kuang{
             background-color: #fff;
-            height: 720px;;
+            height: 100%;
         }
         .shiming-zi{
             display: none;
         }
         .shiming-zi1{
-            width: 670px;
+            width: 88%;
             height: 70px;
             margin: 0 auto;
+            padding-top: 20px;
+            border-bottom:1px solid #f5f5f5;
+            margin-bottom: 20px;
         }
         .shiming-zi1>h4{
             float: left;
@@ -913,16 +1023,17 @@
             display: none;
         }
         .blue1-zi{
-            width: 170px;
+            width: 22%;
             height: 40px;
             margin: 0 auto;
             font-size: 23px;
+            margin-top: 40px;
         }
         .blue1{
             display: none;
         }
         .blue2{
-            width: 670px;
+            width: 89%;
             height: 540px;
             margin: 0 auto;
             margin-bottom: 70px;
@@ -932,22 +1043,199 @@
             border-bottom-style: solid;
             border-bottom-color: #e8e8e8;
         }
-        .blue21 img{
-            margin-top: 55px;
-            margin-left: 85px;
+        .blue21-img{
+            width: 33%;
             float: left;
+            height: 185px;
+        }
+        .blue21-img img{
+            margin-left: 30%;
+            margin-top: 30%;
         }
         .blue21-zi{
-            width: 380px;
-            height: 45px;
+            width: 58%;
+            height: 186px;
             float: left;
-            margin-top: 50px;
-            margin-left: 70px;
+            padding-top: 8%;
+          
             font-size: 18px;
         }
         .black{
             display: none;
         }
+        .con1-tu img{
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+        
+      
+    }
+        .con1-tu{
+            position: relative;
+        }
+    #con2{
+        display: none;
+    }
+    .but-kuang{
+        width: 100%;
+        height: 140px;
+        background-color: #fff;
+    }
+    .but1{
+        width: 30%;
+        height:40%;
+        color:#b8b8b8;
+        font-size: 20px;
+        margin-top: 5%;
+        margin-left: 35%;
+        background-color: #fff;
+        border-radius: 10px;
+        border:1px solid #b8b8b8;
+    }
+    .xianlu1{
+        width: 100%;
+        height: 100px;
+        border-bottom-style: solid;
+        border-bottom-color: #f5f5f5;
+        background-color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .kuang-xian{
+        background-color: #fff;
+    }
+    .xianlu1>p{
+        font-size: 26px;
+        margin-left: 5%;
+        padding-top: 8%;
+    }
+    .qianzheng-zi{
+        display: none;
+    }
+    .qianzheng1{
+        width: 100%;
+        height: 100px;
+        border-bottom-style: solid;
+        border-bottom-color: #f5f5f5;
+        background-color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .kuang-qian{
+        margin-top:20px; 
+        background-color: #fff;
+        margin-bottom: 20px;
+    }
+    .qianzheng1>p{
+        font-size: 26px;
+        margin-left: 5%;
+        padding-top: 8%;
+    }
+    #con11{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding-left: 25px; */
+        padding-right: 0px;
+    }
+    #con22{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 14px;
+        padding-right: 15px;
+    }
+    #con33{
+        display: none;
+    }
+    #ma20{
+        margin-bottom:20px;
+    }
+    .but11{
+        display: none;
+    }
+    #fuwutu img{
+        width: 100%;
+        overflow: hidden;
+    }
+    #shiming-zi>h5{
+            width: 22%;
+            height: 40px;
+            margin: 0 auto;
+            font-size: 23px;
+            margin-top: 40px;
+        }
+    #shiming-zi>h4{
+        display: none;
+    }
+    .fuwu{
+        width: 89%;
+        margin: 0 auto;
+        /* text-align: center */
+        
+    }
+    .fuwu>p{
+        margin-left: 10%;
+    }
+    #potu{
+        margin-bottom: 20px;
+    }
+    .flo{
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom:0%;
+        z-index: 1000;
+        background-color: #000;
+        opacity:0.8;
+        color:#fff;
+    }
+    .flo1{
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+    .flo2{
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+    .flo1>p{
+        float: left;
+        font-size: 23px;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .flo2>p{
+        font-size: 23px;
+        position: absolute;
+        right: 15%;
+        top: 25%;
+    }
+    .flo11{
+        display: none;
+    }
+    .flo22{
+        display: none;
+    }
+    .flo222{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.63);
+        width: 100%;
+        height: 18%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 3;
+        color: rgba(255, 255, 255, 0.801);
+    }
+    .flo222>p{
+        float: left;
+        font-size: 16px;
+        margin-left: 6%;
+        /* margin-top: 2%; */
+    }
 }
     
 
@@ -976,7 +1264,7 @@
             </div>
             <div class="collapse navbar-collapse" id="example-navbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#nav1">首页</a></li>
+                    <li class="active"><a href="#ban">首页</a></li>
                     <li><a href="#area1">热门路线</a></li>
                     <li><a href="#area2">签证推荐</a></li>
                     <li><a href="#area3">使命愿景</a></li>
@@ -1048,23 +1336,47 @@
         </div>
         <button type="button" class="guanggaoPC-but">查看详情</button>
     </div>
-
+    <div class="kuang-xian">
         <div class="xianlu-zi">
             <h4>热&nbsp&nbsp门&nbsp&nbsp线&nbsp&nbsp路</h4>
             <p>Popular tourist routes</p>
         </div>
+        <div class="xianlu1">
+            <p><span style="color: #e8420a;font-size:26px;font-weight: bolder">|</span>&nbsp热门线路</p>
+        </div>
         <div class="container" id="area1">
             <div class="row">
                 <div class="col-md-6 col-xs-12" id="con1">
-                    <div>
+                    <div class="con1-tu">
                         <img src="img/hot1.jpg"/>
+                        <div class="flo">
+                            <div class="flo1">
+                                <p>海南三亚5天4晚，</p>
+                                <p>纯玩、4晚红树林度假王国</p>
+                            </div>
+                            <div class="flo2">
+                                <p>¥<span style="font-size: 40px;">2580</span>/人起</p>
+                                  
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="black">
                         <p style="padding-top: 18px;">海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
                         <p>¥<span style="font-size: 28px;">2580</span>/人起</p>
                     </div>
-                    <div>
+                    <div class="con1-tu">
                         <img src="img/hot2.jpg"/>
+                        <div class="flo">
+                            <div class="flo1">
+                                <p>德法意瑞欧洲四国</p>
+                                <p>ABCD任意线路由您挑选</p>
+                            </div>
+                            <div class="flo2">
+                                <p>¥<span style="font-size: 40px;">7999</span>/人起</p>
+                                      
+                            </div>
+                        </div>
                     </div>
                     <div class="black" style="height: 90px">
                         <p style="padding-top: 15px;">德法意瑞欧洲四国，ABCD任意线路由您挑选</p>
@@ -1072,20 +1384,113 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12" id="con2">
-                    <div>
+                    <div class="con1-tu">
                         <img src="img/hot3.jpg"/>
+                        <div class="flo11">
+                            <p >曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                            <p ><span style="font-size: 30px;">¥2799</span>／人起</p>
+                        </div>
+
                     </div> 
-                    <div>
+                    <div class="con1-tu">
                         <img src="img/hot4.jpg"/>
+                        <div class="flo11">
+                            <p>日本本州游 樱花、寿司、温泉、美食</p>
+                            <p><span style="font-size: 30px;">¥5399</span>／人起</p>
+                        </div>
+
                     </div>
-                    <div>
+                    <div class="con1-tu">
                         <img src="img/hot5.jpg"/>
+                        <div class="flo11">
+                            <p>斯里兰卡7天6晚全景游   保证入住2晚香格里拉</p>
+                            <p><span style="font-size: 30px;">¥7999</span>／人起</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="container" id="area2"></div>
+        <div class="but-kuang">
+            <button type="button" class="but1">查看更多&nbsp></button>
+        </div>
+    </div> 
+
+
+    <div class="kuang-qian">
+        <div class="qianzheng-zi">
+            <h4>签&nbsp&nbsp证&nbsp&nbsp推&nbsp&nbsp鉴</h4>
+            <p>Visa recommendation</p>
+            <p>热门：日本&nbsp&nbsp马来西亚&nbsp&nbsp美国&nbsp&nbsp意大利&nbsp&nbsp加拿大&nbsp&nbsp新加坡</p>
+        </div>
+        <div class="qianzheng1">
+            <p><span style="color: #e8420a;font-size:26px;font-weight: bolder">|</span>&nbsp签证推荐</p>
+        </div>
+
+        <div class="container" id="area2">
+                <div class="row">
+                    <div class="col-md-4 col-xs-6" id="con11">
+                        <div class="con1-tu">
+                            <img src="img/visa1.jpg"/>
+                            <div class="flo22"style="height: 10%;">
+                                <p style="margin-top: 20px;">日本旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 30px;">¥420</span>／人</p>
+                            </div>
+                            <div class="flo222" style="height: 10%;">
+                                <p>日本旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 25px;">¥420</span>／人</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 col-xs-6" id="con22">
+                        <div class="con1-tu"id="ma20">
+                            <img src="img/visa2.jpg"/>
+                            <div class="flo22">
+                                <p>新加坡旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 30px;">¥370</span>／人</p>
+                            </div>
+                            <div class="flo222">
+                                <p>美国旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 25px;">¥1380</span>／人</p>
+                            </div>
+
+                        </div> 
+                        <div class="con1-tu">
+                            <img src="img/visa4.jpg"/>
+                            <div class="flo22">
+                                <p>申根旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 30px;">¥999</span>／人</p>
+                            </div>
+                            <div class="flo222">
+                                <p>新加坡旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 25px;">¥370</span>／人</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 col-xs-12" id="con33">
+                        <div class="con1-tu">
+                            <img src="img/visa3.jpg"/>
+                            <div class="flo22">
+                                <p>马来西亚旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 30px;">¥450</span>／人</p>
+                            </div>
+
+                        </div> 
+                        <div class="con1-tu">
+                            <img src="img/visa5.jpg"/>
+                            <div class="flo22">
+                                <p>美国旅游签证&nbsp;&nbsp;&nbsp;<span style="font-size: 30px;">¥1380</span>／人</p>
+                            </div>
+                            
+
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="but-kuang">
+                <button type="button" class="but1">查看更多&nbsp></button>
+            </div>
+           
+                <button type="button" class="but11">查看更多&nbsp></button>
+              
+    </div>
 
         <div class="guanggao2"><img src="img/Bbanner.jpg"/></div>
         <div class="kuang" >
@@ -1097,11 +1502,12 @@
                     <h4><span style="color:#e8420a;font-weight:bolder;">|&nbsp</span>使命与愿景：</h4>
                     <p>让旅游回归本质，体验纯粹旅游</p>
                 </div>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-5"><img src="img/mission1.jpg"/></div>
-                    <div class="col-md-7" id="shiming-zi">
+            <div class="container">
+                <div class="row" id="potu">
+                    <div class="col-md-5 col-xs-12"id="fuwutu"><img src="img/mission1.jpg"/></div>
+                    <div class="col-md-7 col-xs-12" id="shiming-zi">
                         <h4>服务理念及优势</h4>
+                        <h5>--服务理念--</h5>
                         <div class="fuwu">
                             <p>&nbsp&nbsp&nbsp“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、</p>
                             <p>陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸</p>
@@ -1111,10 +1517,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class=" col-md-12"><img src="img/mission2.jpg"/></div>
+                    <div class=" col-md-12 col-xs-12"id="fuwutu"><img src="img/mission2.jpg"/></div>
                 </div>
                 
-            </div> -->
+            </div>
             <div class="blue1-zi">--服务优势--</div>
             <div class="blue1">
                 <div class="blue11"style="margin-left:10%;">
@@ -1144,7 +1550,9 @@
             </div>
             <div class="blue2">
                 <div class="blue21">
-                    <img src="img/icon11.png"/>
+                    <div class="blue21-img">
+                        <img src="img/icon11.png"/>
+                    </div>
                     <div class="blue21-zi">
                         <p>旅游达人精心设计，基于口碑反复打磨，</p>    
                         <p>告别人山人海鸡肋景点</p>                
@@ -1152,14 +1560,18 @@
                     </div>
                 </div>
                 <div class="blue21">
-                    <img src="img/icon22.png"/>
+                    <div class="blue21-img">
+                        <img src="img/icon22.png"/>
+                    </div>
                     <div class="blue21-zi">
                         <p>不推自费，</p>    
                         <p>不进垃圾购物店和伪景点</p>                
                     </div>
                 </div>
                 <div class="blue21">
-                    <img src="img/icon33.png"/>
+                    <div class="blue21-img">
+                        <img src="img/icon33.png"/>
+                    </div>
                     <div class="blue21-zi">
                         <p>独立成团不散拼，</p>    
                         <p>只跟亲朋好友一起玩，每天发团</p>                
