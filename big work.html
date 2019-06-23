@@ -793,6 +793,30 @@
     .blue2{
         display: none;
     }
+    .black{
+        /* width: 615px; */
+        height: 100px;
+        background-color: #000;
+        color:#fff;
+        font-size: 18px;
+        
+    }
+    .black>p{
+        margin-left: 40px;
+        
+    }
+    #con1{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+    #con2{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
 
 }
 /* .row {
@@ -809,6 +833,10 @@
 @media screen and (max-width: 750px){
         .container{
             width: 670px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
         .guanggao{
             display: none;
@@ -917,6 +945,9 @@
             margin-left: 70px;
             font-size: 18px;
         }
+        .black{
+            display: none;
+        }
 }
     
 
@@ -1024,14 +1055,34 @@
         </div>
         <div class="container" id="area1">
             <div class="row">
-                <div class="col-md-6"><img src="img/hot1.jpg"/></div>
-                <div class="col-md-6"><img src="img/hot3.jpg"/></div>
+                <div class="col-md-6 col-xs-12" id="con1">
+                    <div>
+                        <img src="img/hot1.jpg"/>
+                    </div>
+                    <div class="black">
+                        <p style="padding-top: 18px;">海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                        <p>¥<span style="font-size: 28px;">2580</span>/人起</p>
+                    </div>
+                    <div>
+                        <img src="img/hot2.jpg"/>
+                    </div>
+                    <div class="black" style="height: 90px">
+                        <p style="padding-top: 15px;">德法意瑞欧洲四国，ABCD任意线路由您挑选</p>
+                        <p>¥<span style="font-size: 28px;">7999</span>/人起</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12" id="con2">
+                    <div>
+                        <img src="img/hot3.jpg"/>
+                    </div> 
+                    <div>
+                        <img src="img/hot4.jpg"/>
+                    </div>
+                    <div>
+                        <img src="img/hot5.jpg"/>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6"><img src="img/hot2.jpg"/></div>
-                <div class="col-md-6 col-md-pull-1"><img src="img/hot4.jpg"/></div>
-            </div>
-            <div class="row"></div>
         </div>
         
         <div class="container" id="area2"></div>
